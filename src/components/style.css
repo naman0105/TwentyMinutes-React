@@ -1,6 +1,33 @@
 .Footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     left: 0;
     right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.Timer{
+    /* height: 100% */
+    /* background-color: "#7189FF" */ 
+}
+
+#mail{
+    margin: 5%;
+    align:center
+}
+
+.vl {
+    border-left: 6px solid white;
+    height: 250px;
+    margin-top: 4%;
+    margin-bottom: 4%
+}
+
+.About{
+    background-color: "#624CAB"
+}
+
+.carousel-item > img { 
+    width: 100%; 
 }

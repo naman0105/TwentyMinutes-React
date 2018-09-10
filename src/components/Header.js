@@ -29,10 +29,10 @@ class Header extends Component{
     render(){
         return(
         <div>
-            <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <Navbar dark expand="md" style={{backgroundColor: "#624CAB"}}>
+            <NavbarBrand href="/">Twenty Minutes</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
+            {/* <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                 <NavItem>
                     <NavLink href="/components/">Components</NavLink>
@@ -58,7 +58,7 @@ class Header extends Component{
                     </DropdownMenu>
                 </UncontrolledDropdown>
                 </Nav>
-            </Collapse>
+            </Collapse> */}
             </Navbar>
         </div>
         );
