@@ -14,7 +14,7 @@ class Timer extends Component {
     }
     this.started = false;
     this.timeOver = false;
-    this.totalTimeMinutes = 1;
+    this.totalTimeMinutes = 20;
     this.totalTimeSeconds = 20;
     this.exercise = false;
 

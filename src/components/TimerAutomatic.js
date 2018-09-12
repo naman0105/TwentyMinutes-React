@@ -13,7 +13,7 @@ class TimerAutomatic extends Component{
         this.audio = new Audio();
         this.audio.src = '../beep.mp3'
         this.totalSeconds = 20;
-        this.totalMinutes = 1;
+        this.totalMinutes = 20;
         this.excercise = false;
         this.started = false;
     }
