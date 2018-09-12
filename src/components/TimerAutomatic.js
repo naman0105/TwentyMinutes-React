@@ -18,6 +18,10 @@ class TimerAutomatic extends Component{
         this.started = false;
     }
 
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
+
     increaseTime(){
         if(this.state.seconds == 59){
             this.state.minutes = this.state.minutes + 1;
@@ -78,6 +82,8 @@ class TimerAutomatic extends Component{
 
     startTimer(){
         this.started = true;
+        console.log("timer automatic")
+        NotificationManager.success("Leave this tab open and continue your work","You are all done",5000)
         this.interval = setInterval(()=>{this.increaseTimer()},1000)
     }
 
@@ -114,6 +120,7 @@ class TimerAutomatic extends Component{
                 <Jumbotron style={{backgroundColor:"#7189FF",margin:0}}>
                     {mainLogic}
                 </Jumbotron>
+                <NotificationContainer />
             </div>
         );
     }

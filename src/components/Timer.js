@@ -23,6 +23,10 @@ class Timer extends Component {
     this.audio.src = "../sound.mp3"
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   resetTimer(){
     this.setState({
       seconds:0,
@@ -49,6 +53,8 @@ class Timer extends Component {
 
   startTimer(){
     this.started = true;
+    console.log("timer mannual")
+    NotificationManager.success("Leave this tab open and continue your work","You are all done",5000)
     this.continousTimer();
   }
 
