@@ -18,7 +18,7 @@ class About extends Component{
                             <Col>
                             <h3 className="display-7">Automatic Mode</h3>
                                 <p className="lead">                        
-                                   Automatic Mode beeps a sound once when excercise period starts and will automatically beep after another 20 seconds when the excercise period has ended. This Cycle just keeps on repeating. 
+                                   Automatic Mode beeps a sound twice when excercise period starts and will automatically beep once after another 20 seconds when the excercise period has ended. This Cycle just keeps on repeating. 
                                 </p>                            
                             </Col>
                         </Row>

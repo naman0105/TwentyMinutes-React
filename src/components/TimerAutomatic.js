@@ -36,6 +36,16 @@ class TimerAutomatic extends Component{
                     minutes:0
                 },()=>{
                     this.audio.play();
+                    var ob = this.audio
+                    var counter = 0;
+                    this.audio.onended = function(){
+                        counter++;
+                        if(counter >= 2){
+
+                        } else{
+                            ob.play();
+                        }
+                    }
                     this.excercise = true;
                 })
             } else{
